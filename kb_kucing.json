@@ -1,0 +1,67 @@
+{
+  "judul": "Dugaan Penyakit pada Kucing",
+  "batas": "Aturan disusun berdasarkan panduan Cornell Feline Health Center dan Merck Veterinary Manual. Sistem hanya mencakup dugaan panleukopenia, FLUTD, penyumbatan uretra, dan flu kucing. Hasil ini merupakan indikasi awal, bukan diagnosis dokter hewan.",
+  "sumber": {
+    "S1": "Feline Lower Urinary Tract Disease, Cornell Feline Health Center, https://www.vet.cornell.edu/departments-centers-and-institutes/cornell-feline-health-center/health-information/feline-health-topics/feline-lower-urinary-tract-disease, diakses 12 Nov 2026",
+    "S2": "Feline Panleukopenia, Merck Veterinary Manual, https://www.merckvetmanual.com/cat-owners/disorders-affecting-multiple-body-systems-of-cats/feline-panleukopenia, diakses 12 Nov 2026",
+    "S3": "Feline Respiratory Disease Complex, Merck Veterinary Manual, https://www.merckvetmanual.com/respiratory-system/respiratory-diseases-of-small-animals/feline-respiratory-disease-complex, diakses 12 Nov 2026"
+  },
+  "aturan": [
+    {
+      "id": "R1",
+      "jika": ["muntah berulang", "diare cair berbau menyengat"],
+      "mode": "atau",
+      "maka": "gangguan pencernaan akut",
+      "sumber": "S2"
+    },
+    {
+      "id": "R2",
+      "jika": ["demam", "tubuh lemas dan lesu"],
+      "mode": "dan",
+      "maka": "tanda infeksi sistemik",
+      "sumber": "S2"
+    },
+    {
+      "id": "R3",
+      "jika": ["gangguan pencernaan akut", "tanda infeksi sistemik"],
+      "mode": "dan",
+      "maka": "panleukopenia",
+      "sumber": "S2"
+    },
+    {
+      "id": "R4",
+      "jika": ["mengejan saat buang air kecil", "kesakitan saat buang air kecil"],
+      "mode": "atau",
+      "maka": "gangguan berkemih",
+      "sumber": "S1"
+    },
+    {
+      "id": "R5",
+      "jika": ["gangguan berkemih", "urin bercampur darah"],
+      "mode": "dan",
+      "maka": "FLUTD (gangguan saluran kemih bawah)",
+      "sumber": "S1"
+    },
+    {
+      "id": "R6",
+      "jika": ["gangguan berkemih", "urin tidak keluar sama sekali"],
+      "mode": "dan",
+      "maka": "penyumbatan saluran kemih (obstruksi uretra)",
+      "sumber": "S1"
+    },
+    {
+      "id": "R7",
+      "jika": ["bersin terus-menerus", "keluar cairan dari hidung"],
+      "mode": "atau",
+      "maka": "gejala saluran napas atas",
+      "sumber": "S3"
+    },
+    {
+      "id": "R8",
+      "jika": ["gejala saluran napas atas", "mata berair atau belekan"],
+      "mode": "dan",
+      "maka": "flu kucing (URI)",
+      "sumber": "S3"
+    }
+  ]
+}
