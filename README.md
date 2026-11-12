@@ -64,4 +64,4 @@ Aturan disusun berdasarkan panduan Cornell Feline Health Center dan Merck Veteri
 
 ## 6. Penggunaan Alat Bantu AI
 
-Menggunakan alat bantu AI (Gemini) untuk membantu mencari sumber yang relevan dengan topik yang diangkat dan membantu memvalidasi kode yang dibuat.
+Menggunakan AI (Gemini) untuk membantu mencari sumber yang relevan dengan topik yang diangkat dan membantu memvalidasi kode yang dibuat.
